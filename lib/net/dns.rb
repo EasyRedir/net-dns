@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'dns/version'
 require_relative 'dns/resolver'
 require_relative 'dns/rr'

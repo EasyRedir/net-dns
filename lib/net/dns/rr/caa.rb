@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Net # :nodoc:
   module DNS
     class RR
@@ -18,13 +20,13 @@ module Net # :nodoc:
         private
 
         def build_pack
-          str = ""
+          str = []
           str << [@flags].pack("C")
           str << [@tag.length].pack("C")
           [@tag, @rr_value].each do |attr|
             str << [attr.length, attr].pack("Ca*")
           end
-          @caa_pack = str
+          @caa_pack = str.join
           @rdlength = @caa_pack.size
         end
 

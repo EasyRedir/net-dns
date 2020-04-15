@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Net # :nodoc:
   module DNS
     class RR

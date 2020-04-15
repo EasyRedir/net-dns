@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'logger'
 require 'net/dns/names'
 require 'net/dns/header'
