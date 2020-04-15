@@ -3,7 +3,7 @@ require_relative 'names'
 require_relative 'rr/types'
 require_relative 'rr/classes'
 
-%w[a aaaa cname hinfo mr mx ns ptr soa srv txt].each do |file|
+%w[a aaaa cname hinfo mr mx ns ptr soa srv txt caa].each do |file|
   require_relative "rr/#{file}"
 end
 

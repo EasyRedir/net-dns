@@ -79,6 +79,7 @@ module Net
       MAILB     = 253
       MAILA     = 254
       ANY       = 255
+      CAA       = 257
     end
 
     module QueryClasses

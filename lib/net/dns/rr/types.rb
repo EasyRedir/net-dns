@@ -63,6 +63,7 @@ module Net # :nodoc:
           'MAILB' => 253,     # RFC 1035 (MB, MG, MR)
           'MAILA' => 254,     # RFC 1035 (obsolete - see MX)
           'ANY' => 255, # RFC 1035
+          'CAA' => 257, # RFC 6844
         }.freeze
 
         # The default value when type is nil in Resource Records
