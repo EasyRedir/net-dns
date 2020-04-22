@@ -587,7 +587,7 @@ module Net
       #   puts res.state
       #
       def state
-        str = [";; RESOLVER state:\n;; "]
+        str = ";; RESOLVER state:\n;; ".dup
         i = 1
         @config.each do |key, val|
           str << if (key == :log_file) || (key == :config_file)
@@ -598,7 +598,7 @@ module Net
           str << "\n;; " if i.even?
           i += 1
         end
-        str.join
+        str
       end
       alias print state
       alias inspect state

@@ -20,13 +20,13 @@ module Net # :nodoc:
         private
 
         def build_pack
-          str = []
+          str = "".dup
           str << [@flags].pack("C")
           str << [@tag.length].pack("C")
           [@tag, @rr_value].each do |attr|
             str << [attr.length, attr].pack("Ca*")
           end
-          @caa_pack = str.join
+          @caa_pack = str
           @rdlength = @caa_pack.size
         end
 
